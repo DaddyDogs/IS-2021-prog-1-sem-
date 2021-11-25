@@ -32,10 +32,13 @@ uint1024_t subtr_op(uint1024_t x, uint1024_t y) {
     uint1024_t result;
     int buff = 0;
     for (int i = 0; i < 32; i++) {
-        if (x.num[i] - buff >= y.num[i]) {
+        if (x.num[i] - buff >= y.num[i])
+        {
             result.num[i] = (uint64_t) x.num[i] - buff - (uint64_t) y.num[i];
             buff = 0;
-        } else {
+        }
+        else
+        {
             result.num[i] = (uint64_t) x.num[i] + base - (uint64_t) y.num[i] - buff;
             buff = 1;
         }
@@ -105,16 +108,11 @@ int main() {
 uint1024_t x;
 scanf_value(&x);
 uint1024_t y;
-    scanf_value(&y);
+scanf_value(&y);
 
 uint1024_t number2 = from_uint(4366559);
 uint1024_t number3 = from_uint(4564889);
 
-//printf_value(add_op(number2, number3));
-//printf("\n");
-//
-//printf_value(subtr_op(number2, number3));
-//printf("\n");
 
 printf_value(mult_op(x, y));
 printf("\n");
