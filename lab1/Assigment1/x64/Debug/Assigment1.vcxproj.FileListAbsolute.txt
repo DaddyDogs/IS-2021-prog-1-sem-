@@ -1,0 +1,4 @@
+C:\CK\Assigment1\x64\Debug\Assigment1.vcxproj.CopyComplete
+C:\CK\Assigment1\x64\Debug\Assigment1.exe
+C:\CK\Assigment1\x64\Debug\gtest.pdb
+C:\CK\Assigment1\x64\Debug\gtest_main.pdb
